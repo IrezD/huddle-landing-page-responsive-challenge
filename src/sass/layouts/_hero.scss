@@ -1,0 +1,125 @@
+@use "../base";
+@use "../abstracts";
+
+.hero-section{
+    background:url(/images/bg-hero-desktop.svg), base.$color_Pale-cyan;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    width: 100%;
+    min-height: 955px;
+
+    @include abstracts.mq(small){
+        min-height: 655px;
+
+    }
+ 
+}
+
+.hero{
+    display: flex;
+    margin-top: 92px;
+    gap: 2em;
+    
+    @include abstracts.mq(medium){
+        flex-direction: column;
+    }
+
+    @include abstracts.mq(small){
+        flex-direction: column;
+    }
+
+}
+
+.hero-content{
+    align-self: center;
+    flex-basis: 46%;
+    padding-left: 5px;
+    
+
+    @include abstracts.mq(medium){
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-size: clamp(2rem, 3vw, 3.28rem);
+        font-family: base.$font_primary;
+        font-weight: 800;
+        max-width: 20ch;
+        margin-bottom: 36px;
+        transform: translateY(2px);
+
+        @include abstracts.mq(medium){
+            text-align: center;
+            font-size: 2.6rem;
+            padding-left: 35px;
+        }
+
+        @include abstracts.mq(small){
+            font-size: 1.6rem;
+            max-width: 90ch;
+            padding: 0;
+        }
+    }
+
+    &__body{
+        font-size: abstracts.$font_clamp;
+        max-width: 50ch;
+        font-weight: 400;
+        // margin: 18px 0 40px 0;
+        transform: translateY(3px);
+        margin-bottom: 49px;
+
+
+        @include abstracts.mq(medium){
+            text-align: center;
+            font-size: 1.3rem;
+            transform: none;
+            line-height: 1.6;
+        }
+
+        @include abstracts.mq(small){
+            line-height: 1.8;
+            font-size: 1.05rem;
+            max-width: 80ch
+        }
+    }
+
+    &__btn{
+        @include abstracts.btn(base.$color_primary, base.$color_white);
+        padding: 26px 92px;
+        margin-left: 8px;
+
+        @include abstracts.mq(medium){
+            text-align: center;
+            // font-size: 1.3rem;
+            transform: none;
+            margin: 0 auto;
+            padding: 20px 80px;
+            margin-bottom: 30px;
+        }
+
+        @include abstracts.mq(small){
+            padding: 15px 60px;
+           
+        }   
+
+    }
+}
+
+.hero-imagebox{
+    flex-basis: 54%;
+
+    &__image{
+        min-width: 400px;
+        transform: translate(-23px, -12px);
+
+        @include abstracts.mq(medium){
+            transform: none;
+            min-width: 20px;
+        }
+         
+    }
+}

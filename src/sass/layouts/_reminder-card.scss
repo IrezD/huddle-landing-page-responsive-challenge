@@ -1,0 +1,87 @@
+@use "../abstracts";
+@use "../base";
+
+.reminder-section{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: -125px;
+
+    @include abstracts.mq(medium){
+        margin-bottom: -150px;
+    }
+
+    @include abstracts.mq(small){
+        margin-bottom: -80px;
+    }
+
+
+}
+
+.bottom-card{
+        width: 55.5%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.076);
+        border-radius: 20px;
+        margin: auto;  
+        height: 370px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        @include abstracts.mq(medium){
+            width: 90%;
+            height: 270px; 
+        }
+
+        @include abstracts.mq(small){
+            height: 190px; 
+        }
+        
+        
+
+
+        &__title{
+            font-family: base.$font_primary;
+            font-weight: 600;
+            font-size: 2.64rem;
+            margin-top: 24px;
+            transform: translateX(-2px);
+
+            @include abstracts.mq(medium){
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            @include abstracts.mq(small){
+                font-size: 1.1rem
+            }
+        
+        }
+
+        &__btn{
+            @include abstracts.btn(base.$color_primary, base.$color_white);
+            margin-left: 8px;
+            width: 526px;
+            padding: 33px;
+            font-size: 1.64rem;
+            margin-top: 56px;
+
+            @include abstracts.mq(medium){
+                margin: 20px 0 0 -20px;
+                padding: 20px 0;
+                width: 360px;
+            }
+
+            @include abstracts.mq(small){
+                margin: 20px 0 0 -0;
+                padding: 15px 0;
+                width: 220px;
+                font-size: .7rem;
+                letter-spacing: .4px;
+            }
+        
+        }
+}

@@ -1,0 +1,36 @@
+@use "../base";
+@use "../abstracts/breakpoints" as a;
+
+@mixin btn ($btnBgcolor, $btnColor) {
+    background-color: $btnBgcolor;
+    display: inline-block;
+    padding: 20px 85px;
+    font-size: 1.15rem;
+    font-family: base.$font_secondary;
+    font-weight: 700;
+    border-radius: 50px;
+    color: $btnColor;
+    box-shadow: 4px .25px 15px rgba(0, 0, 0, 0.076);
+    transform: translate(-6px, -8px);
+    transition: opacity 250ms 50ms, transform 450ms 50ms;
+
+    &:hover{
+        opacity: .75;
+        transform: scaleX(1.08);
+
+    }
+
+    
+    @include a.mq(medium){
+        transform: translate(20px, 0px);
+        padding: 8px 30px;
+        font-size: 1rem;
+    }
+
+    @include a.mq(small){
+        padding: 8px 30px;
+        font-size: .8rem;
+        margin: -20px -20px 0 0;
+        transform: none;
+    }
+}

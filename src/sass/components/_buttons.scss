@@ -1,0 +1,18 @@
+@use "../base";
+@use "../abstracts";
+
+.btn{
+    @include abstracts.btn (base.$color_white, base.$color_black);
+}
+
+.social-icons__custom{
+    font-size: 2.2rem;
+    transition: color 250ms 50ms;
+    &:hover{
+        color: base.$color_primary;
+    }
+
+    @include abstracts.mq(small){
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,21 @@
+@use "../abstracts";
+
+
+
+.hero-section-container{
+    padding: 70px 100px;
+    
+    @include abstracts.mq(medium){
+        padding: 50px 40px;
+    }
+    
+    @include abstracts.mq(small){
+        // padding: 0px;
+    }
+
+}
+
+.cards-container{
+    width: 85.5%;
+    margin: 10.8% auto;
+}

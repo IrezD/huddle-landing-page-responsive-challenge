@@ -1,0 +1,90 @@
+@use "../base";
+@use "../abstracts";
+
+.cards{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.076);
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    padding: 20px 40px 20px 160px;
+    min-height: 580px;
+    display: flex;
+    justify-content: center;
+
+    @include abstracts.mq(medium){
+        flex-direction: column;
+        padding: 70px 30px;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    @include abstracts.mq(small){
+        padding: 60px 30px;
+    }
+
+    &-content{
+        align-self: center;
+
+        @include abstracts.mq(medium){
+            order: 2;
+        }
+        
+        &__title{
+            font-size: 2.3rem;
+            color: base.$color_black; 
+            font-family: base.$font_primary;
+            margin-top: -9px;
+
+            @include abstracts.mq(medium){
+                margin-top: 40px;
+            }
+
+            @include abstracts.mq(small){
+                font-size: 1.4rem;
+            }
+        }
+
+        &__body{
+            font-size: abstracts.$font_clamp;
+            transform: translate(-4px, 15px);
+            max-width: 65ch;
+            line-height: 1.5;
+            margin: 2px 0 0 2px;
+            color: base.$color_Grayish-blue;
+
+            @include abstracts.mq(medium){
+                line-height: 1.7;
+            }
+
+            @include abstracts.mq(small){
+                font-size: .85rem;
+                line-height: 1.82;
+                letter-spacing: .3px;
+            }
+        }
+    }
+
+    &-imagebox{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+.card-reverse{
+    flex-direction: row-reverse;
+
+    &__image{
+        margin-right: auto;
+        transform: translateX(-100px);
+
+        @include abstracts.mq(medium){
+            transform: none;
+        }
+    }
+
+    @include abstracts.mq(medium){
+        order: 2;
+        flex-direction: column;
+    }
+}

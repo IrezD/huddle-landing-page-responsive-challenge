@@ -1,0 +1,23 @@
+@use "../abstracts";
+
+#images{
+    width: 100%;
+}
+
+.cards-imagebox__images{
+    width: 71.4%;
+    margin-left: auto;
+    
+    @include abstracts.mq(medium){
+        margin: auto;
+    }
+}
+
+.location-icon{
+    width: 65px;
+
+
+    @include abstracts.mq(small){
+        width: 55px;
+    }
+}

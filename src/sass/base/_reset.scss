@@ -1,0 +1,20 @@
+@use "../base/colors";
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: colors.$color_lightwhite;
+}
+
+li{
+    list-style-type: none;
+}

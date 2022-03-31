@@ -1,0 +1,23 @@
+@use "../abstracts";
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    flex-basis: 262px;
+    padding-top: 3.5px;
+    transform: translateX(7px);
+
+
+    @include abstracts.mq(medium){
+        flex-basis: 200px;
+    }
+
+    @include abstracts.mq(small){
+        flex-basis: 120px;
+        transform: none;
+        transform: translateX(-20px);
+    }
+}
