@@ -12,11 +12,11 @@ footer{
     padding: 250px 20px 0 160px;
 
     @include abstracts.mq(medium){
-        padding: 250px 80px 0 80px;
+        padding: 250px 80px 60px 80px;
     }
 
     @include abstracts.mq(small){
-        padding: 180px 40px 0 40px;
+        padding: 180px 40px 30px 40px;
     }
 
 }
@@ -165,4 +165,5 @@ footer{
         padding: 315px 0 50px 0;
         text-align: center
     }
+
 }
