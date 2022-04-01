@@ -10,5 +10,4 @@ This is a landing page challenge from FrontendMentor.io. I tried replicating the
 
 # Landing Page Design:
 
-![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)
-
+![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./src/design/desktop-preview.jpg)
