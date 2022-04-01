@@ -178,12 +178,12 @@ footer {
 }
 @media (max-width: 1066px) {
   .contact-container {
-    padding: 250px 80px 0 80px;
+    padding: 250px 80px 60px 80px;
   }
 }
 @media (max-width: 494px) {
   .contact-container {
-    padding: 180px 40px 0 40px;
+    padding: 180px 40px 30px 40px;
   }
 }
 
