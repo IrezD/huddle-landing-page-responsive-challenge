@@ -5,7 +5,7 @@
 - 📫 How to reach me is to hit my mail.. dennysben@gmail.com
 <br><br>d<!----
 This is a landing page challenge from FrontendMentor.io. I tried replicating the design as much as I could.
---->
+---->
 <br> link to design: https://irezd.github.io/huddle-landing-page-responsive-challenge/src/
 
 # Landing Page Design:
