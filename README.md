@@ -1,6 +1,6 @@
 
-This is a landing page challenge from FrontendMentor.io. I tried replicating the design as much as I could using html and css.
----->
+This is a landing page challenge from FrontendMentor.io.
+
 <br> link to design: https://irezd.github.io/huddle-landing-page-responsive-challenge/src/
 
 # Landing Page Design:
