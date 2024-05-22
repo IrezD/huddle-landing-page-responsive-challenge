@@ -1,7 +1,7 @@
 
 This is a landing page challenge from FrontendMentor.io.
 
-<br> link to design: https://irezd.github.io/huddle-landing-page-responsive-challenge/src/
+<br> link to HTML page: https://irezd.github.io/huddle-landing-page-responsive-challenge/src/
 
 # Landing Page Design:
 
